@@ -23,7 +23,9 @@ def main():
 
     nn = NeuralNetwork()
 
-    for _ in range(10):
+    epoch = 100
+
+    for _ in range(epoch):
         for input_data in enumerate(input_list):
             nn.train(input_data[1], target_list[input_data[0]])
 

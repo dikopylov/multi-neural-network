@@ -14,10 +14,10 @@ from output import Output
 
 
 class NeuralNetwork:
-    def __init__(self, input_nodes=2, hidden_nodes=2, output_nodes=2, rate=0.5):
+    def __init__(self, input_nodes=2, hidden_nodes=4, output_nodes=2, rate=0.5):
         """
         :param int input_nodes: количество узлов во входном слое
-        :param int hidden_nodes: количество узлов в скрытом слое
+        :param int hidden_nodes: количество узлов в скрытом слое = input * output
         :param int output_nodes: количество узлов в выходном слое
         :param float rate: коэфициент обучения
         """
